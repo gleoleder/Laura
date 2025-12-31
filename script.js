@@ -5,6 +5,126 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // ============================================
+    // DATOS DE LOS TALLERES
+    // ============================================
+    const talleresData = {
+        cuentacuentos: {
+            title: "Cuentacuentos",
+            subtitle: "Taller de Lectura Interactiva y Narracion",
+            image: "images/gallery-reading.jpg",
+            icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>`,
+            description: "El taller de Cuentacuentos es una experiencia magica donde los ninos se sumergen en el mundo de la literatura infantil. A traves de la narracion dramatizada, voces de personajes y elementos visuales, los pequenos desarrollan su imaginacion, comprension auditiva y amor por los libros. Cada sesion incluye actividades de comprension, preguntas interactivas y momentos donde los ninos pueden recrear la historia con sus propias palabras, fortaleciendo asi su expresion oral y vocabulario.",
+            features: [
+                "Desarrollo de la imaginacion",
+                "Mejora de la comprension auditiva",
+                "Ampliacion del vocabulario",
+                "Fomento del amor por la lectura",
+                "Expresion oral y narracion",
+                "Comprension de secuencias"
+            ]
+        },
+        arte: {
+            title: "Arte Creativo",
+            subtitle: "Taller de Pintura, Dibujo y Manualidades",
+            image: "images/gallery-crafts.jpg",
+            icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+            </svg>`,
+            description: "El taller de Arte Creativo permite a los ninos explorar su creatividad mientras desarrollan habilidades linguisticas. Mientras pintan, dibujan o crean manualidades, aprenden nombres de colores, formas, texturas y materiales. Las actividades artisticas se convierten en oportunidades para describir, narrar y expresar emociones. Los ninos aprenden a seguir instrucciones, explicar sus creaciones y desarrollar vocabulario relacionado con el arte, todo mientras fortalecen su motricidad fina.",
+            features: [
+                "Desarrollo de motricidad fina",
+                "Vocabulario de colores y formas",
+                "Expresion de emociones",
+                "Seguimiento de instrucciones",
+                "Creatividad e imaginacion",
+                "Descripcion oral de creaciones"
+            ]
+        },
+        construccion: {
+            title: "Juegos de Construccion",
+            subtitle: "Taller de Desarrollo Cognitivo y Espacial",
+            image: "images/gallery-blocks.jpg",
+            icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>`,
+            description: "Los juegos de construccion son fundamentales para el desarrollo cognitivo y linguistico. Mientras los ninos construyen torres, puentes y estructuras, aprenden conceptos espaciales (arriba, abajo, al lado), tamanos (grande, pequeno, mediano), cantidades y colores. Este taller fomenta el trabajo en equipo, la resolucion de problemas y la comunicacion. Los ninos aprenden a planificar, describir sus construcciones y explicar procesos, desarrollando habilidades narrativas y vocabulario tecnico basico.",
+            features: [
+                "Conceptos espaciales y tamanos",
+                "Resolucion de problemas",
+                "Trabajo colaborativo",
+                "Planificacion y descripcion",
+                "Vocabulario matematico basico",
+                "Coordinacion mano-ojo"
+            ]
+        },
+        lenguaje: {
+            title: "Estimulacion del Lenguaje",
+            subtitle: "Taller de Vocabulario y Expresion Oral",
+            image: "images/gallery-language.jpg",
+            icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>`,
+            description: "Este taller se centra especificamente en el desarrollo de las habilidades comunicativas de los ninos. A traves de juegos con tarjetas, imagenes, objetos reales y actividades interactivas, los pequenos amplian su vocabulario, mejoran su pronunciacion y aprenden a estructurar oraciones. Se trabaja la identificacion de objetos, descripcion de caracteristicas, narracion de experiencias personales y comprension de preguntas. Cada actividad esta disenada para que el nino se sienta motivado a comunicarse.",
+            features: [
+                "Ampliacion de vocabulario",
+                "Mejora de pronunciacion",
+                "Estructuracion de oraciones",
+                "Descripcion de objetos",
+                "Narracion de experiencias",
+                "Comprension de preguntas"
+            ]
+        },
+        musica: {
+            title: "Musica y Ritmo",
+            subtitle: "Taller de Canciones y Juegos Musicales",
+            image: "images/gallery-music.jpg",
+            icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="5.5" cy="17.5" r="2.5"></circle>
+                <circle cx="17.5" cy="15.5" r="2.5"></circle>
+                <path d="M8 17V5l12-2v12"></path>
+            </svg>`,
+            description: "La musica es una herramienta poderosa para el desarrollo del lenguaje. En este taller, los ninos aprenden canciones infantiles, rimas, trabalenguas y juegos ritmicos que fortalecen su memoria auditiva, conciencia fonologica y fluidez verbal. Las canciones con movimientos ayudan a asociar palabras con acciones, mientras que los juegos de ritmo mejoran la percepcion de los sonidos del lenguaje. Es una forma divertida y efectiva de desarrollar habilidades prelinguisticas y linguisticas.",
+            features: [
+                "Memoria auditiva",
+                "Conciencia fonologica",
+                "Fluidez verbal",
+                "Coordinacion ritmo-palabra",
+                "Aprendizaje de rimas",
+                "Asociacion palabra-movimiento"
+            ]
+        },
+        titeres: {
+            title: "Teatro de Titeres",
+            subtitle: "Taller de Dramatizacion y Expresion",
+            image: "images/gallery-puppets.jpg",
+            icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            </svg>`,
+            description: "El teatro de titeres es una actividad extraordinaria para el desarrollo del lenguaje expresivo. Los ninos pueden dar voz a personajes, crear dialogos, inventar historias y expresar emociones a traves de los titeres. Esta forma de juego simbolico les permite practicar diferentes tonos de voz, expresiones y estructuras linguisticas en un ambiente seguro y divertido. El taller incluye la creacion de titeres sencillos y la representacion de pequenas obras, fomentando la creatividad y la expresion oral.",
+            features: [
+                "Expresion de emociones",
+                "Creacion de dialogos",
+                "Modulacion de la voz",
+                "Juego simbolico",
+                "Creatividad narrativa",
+                "Confianza al hablar"
+            ]
+        }
+    };
+
+    // ============================================
     // NAVBAR SCROLL EFFECT
     // ============================================
     const navbar = document.getElementById('navbar');
@@ -26,18 +146,20 @@ document.addEventListener('DOMContentLoaded', function() {
     
     navLinks.forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const target = document.querySelector(targetId);
-            
-            if (target) {
-                const navHeight = navbar.offsetHeight;
-                const targetPosition = target.offsetTop - navHeight;
+            const href = this.getAttribute('href');
+            if (href.startsWith('#') && href.length > 1) {
+                e.preventDefault();
+                const target = document.querySelector(href);
                 
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+                if (target) {
+                    const navHeight = navbar.offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
             }
         });
     });
@@ -77,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
     addStaggerDelay('.cert-item', 0.08);
     
     // ============================================
-    // MOBILE MENU (Basic Toggle)
+    // MOBILE MENU
     // ============================================
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinksContainer = document.querySelector('.nav-links');
@@ -86,7 +208,6 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenuBtn.addEventListener('click', function() {
             navLinksContainer.classList.toggle('mobile-open');
             
-            // Toggle icon
             const isOpen = navLinksContainer.classList.contains('mobile-open');
             this.innerHTML = isOpen ? 
                 `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -102,60 +223,61 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // ============================================
-    // FORM HANDLING
+    // MODAL TALLERES
     // ============================================
-    const contactForm = document.querySelector('.contact-form-card');
+    const modal = document.getElementById('tallerModal');
+    const galleryItems = document.querySelectorAll('.gallery-item[data-taller]');
     
-    if (contactForm) {
-        const submitBtn = contactForm.querySelector('.form-submit');
-        const inputs = contactForm.querySelectorAll('input, textarea');
-        
-        submitBtn.addEventListener('click', function(e) {
-            e.preventDefault();
+    galleryItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const tallerId = this.getAttribute('data-taller');
+            const taller = talleresData[tallerId];
             
-            // Simple validation
-            let isValid = true;
-            inputs.forEach(input => {
-                if (!input.value.trim()) {
-                    isValid = false;
-                    input.style.borderColor = '#E57373';
-                } else {
-                    input.style.borderColor = '';
-                }
-            });
-            
-            if (isValid) {
-                // Simulate form submission
-                submitBtn.innerHTML = `
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    Mensaje Enviado
-                `;
-                submitBtn.style.background = '#4CAF50';
-                
-                // Reset after 3 seconds
-                setTimeout(() => {
-                    submitBtn.innerHTML = `
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                        </svg>
-                        Enviar Mensaje
-                    `;
-                    submitBtn.style.background = '';
-                    inputs.forEach(input => input.value = '');
-                }, 3000);
+            if (taller) {
+                openModal(taller, tallerId);
             }
         });
+    });
+    
+    function openModal(taller, tallerId) {
+        document.getElementById('modalImage').src = taller.image;
+        document.getElementById('modalImage').alt = taller.title;
+        document.getElementById('modalIcon').innerHTML = taller.icon;
+        document.getElementById('modalTitle').textContent = taller.title;
+        document.getElementById('modalSubtitle').textContent = taller.subtitle;
+        document.getElementById('modalDescription').textContent = taller.description;
         
-        // Remove error styling on input
-        inputs.forEach(input => {
-            input.addEventListener('input', function() {
-                this.style.borderColor = '';
-            });
-        });
+        const featuresContainer = document.getElementById('modalFeatures');
+        featuresContainer.innerHTML = taller.features.map(f => `<li>${f}</li>`).join('');
+        
+        // Update WhatsApp link
+        const whatsappLink = document.getElementById('modalWhatsapp');
+        const mensaje = encodeURIComponent(`Hola Laura Patricia, me interesa el taller de ${taller.title}. Me gustaria recibir mas informacion.`);
+        whatsappLink.href = `https://wa.me/59171928909?text=${mensaje}`;
+        
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
     }
+    
+    // Close modal function (global)
+    window.closeModal = function() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+    
+    // Close on overlay click
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
     
     // ============================================
     // PARALLAX EFFECT FOR HERO BLOBS
@@ -167,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const y = e.clientY / window.innerHeight;
         
         blobs.forEach((blob, index) => {
-            const speed = (index + 1) * 20;
+            const speed = (index + 1) * 15;
             const xMove = (x - 0.5) * speed;
             const yMove = (y - 0.5) * speed;
             
@@ -189,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionId = section.getAttribute('id');
             const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
             
-            if (navLink) {
+            if (navLink && !navLink.classList.contains('nav-btn')) {
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                     navLink.style.color = 'var(--coral)';
                 } else {
@@ -202,71 +324,10 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', highlightNavLink);
     
     // ============================================
-    // GALLERY LIGHTBOX (Simple)
+    // ADD MOBILE MENU STYLES
     // ============================================
-    const galleryItems = document.querySelectorAll('.gallery-item img');
-    
-    galleryItems.forEach(img => {
-        img.addEventListener('click', function() {
-            // Create lightbox
-            const lightbox = document.createElement('div');
-            lightbox.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: rgba(0,0,0,0.9);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                z-index: 9999;
-                cursor: pointer;
-                animation: fadeIn 0.3s ease;
-            `;
-            
-            const imgClone = document.createElement('img');
-            imgClone.src = this.src;
-            imgClone.style.cssText = `
-                max-width: 90%;
-                max-height: 90%;
-                border-radius: 10px;
-                box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-                animation: scaleIn 0.3s ease;
-            `;
-            
-            lightbox.appendChild(imgClone);
-            document.body.appendChild(lightbox);
-            document.body.style.overflow = 'hidden';
-            
-            // Close on click
-            lightbox.addEventListener('click', function() {
-                this.style.animation = 'fadeOut 0.3s ease';
-                setTimeout(() => {
-                    this.remove();
-                    document.body.style.overflow = '';
-                }, 300);
-            });
-        });
-    });
-    
-    // Add keyframe animations
     const style = document.createElement('style');
     style.textContent = `
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes fadeOut {
-            from { opacity: 1; }
-            to { opacity: 0; }
-        }
-        @keyframes scaleIn {
-            from { transform: scale(0.8); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
-        
-        /* Mobile menu styles */
         @media (max-width: 768px) {
             .nav-links.mobile-open {
                 display: flex !important;
@@ -283,6 +344,21 @@ document.addEventListener('DOMContentLoaded', function() {
             .nav-links.mobile-open .nav-btn {
                 text-align: center;
             }
+        }
+        
+        a.hero-contact-item,
+        a.contact-item {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        a.hero-contact-item:hover {
+            color: var(--coral);
+        }
+        
+        a.contact-item:hover {
+            background: var(--coral-lighter);
         }
     `;
     document.head.appendChild(style);
