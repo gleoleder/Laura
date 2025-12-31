@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
             </svg>`,
-            description: "El taller de Cuentacuentos es una experiencia magica donde los ninos se sumergen en el mundo de la literatura infantil. A traves de la narracion dramatizada, voces de personajes y elementos visuales, los pequenos desarrollan su imaginacion, comprension auditiva y amor por los libros. Cada sesion incluye actividades de comprension, preguntas interactivas y momentos donde los ninos pueden recrear la historia con sus propias palabras, fortaleciendo asi su expresion oral y vocabulario.",
+            description: "El taller de Cuentacuentos es una experiencia mágica donde los niños se sumergen en el mundo de la literatura infantil. A traves de la narracion dramatizada, voces de personajes y elementos visuales, los pequeños desarrollan su imaginación, comprension auditiva y amor por los libros. Cada sesión incluye actividades de comprensión, preguntas interactivas y momentos donde los niños pueden recrear la historia con sus propias palabras, fortaleciendo asi su expresion oral y vocabulario.",
             features: [
                 "Desarrollo de la imaginacion",
                 "Mejora de la comprension auditiva",
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <path d="M2 2l7.586 7.586"></path>
                 <circle cx="11" cy="11" r="2"></circle>
             </svg>`,
-            description: "El taller de Arte Creativo permite a los ninos explorar su creatividad mientras desarrollan habilidades linguisticas. Mientras pintan, dibujan o crean manualidades, aprenden nombres de colores, formas, texturas y materiales. Las actividades artisticas se convierten en oportunidades para describir, narrar y expresar emociones. Los ninos aprenden a seguir instrucciones, explicar sus creaciones y desarrollar vocabulario relacionado con el arte, todo mientras fortalecen su motricidad fina.",
+            description: "El taller de Arte Creativo permite a los niños explorar su creatividad mientras desarrollan habilidades linguisticas. Mientras pintan, dibujan o crean manualidades, aprenden nombres de colores, formas, texturas y materiales. Las actividades artisticas se convierten en oportunidades para describir, narrar y expresar emociones. Los niños aprenden a seguir instrucciones, explicar sus creaciones y desarrollar vocabulario relacionado con el arte, todo mientras fortalecen su motricidad fina.",
             features: [
                 "Desarrollo de motricidad fina",
                 "Vocabulario de colores y formas",
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <rect x="14" y="14" width="7" height="7"></rect>
                 <rect x="3" y="14" width="7" height="7"></rect>
             </svg>`,
-            description: "Los juegos de construccion son fundamentales para el desarrollo cognitivo y linguistico. Mientras los ninos construyen torres, puentes y estructuras, aprenden conceptos espaciales (arriba, abajo, al lado), tamanos (grande, pequeno, mediano), cantidades y colores. Este taller fomenta el trabajo en equipo, la resolucion de problemas y la comunicacion. Los ninos aprenden a planificar, describir sus construcciones y explicar procesos, desarrollando habilidades narrativas y vocabulario tecnico basico.",
+            description: "Los juegos de construcción son fundamentales para el desarrollo cognitivo y linguistico. Mientras los niños construyen torres, puentes y estructuras, aprenden conceptos espaciales (arriba, abajo, al lado), tamaños (grande, pequeno, mediano), cantidades y colores. Este taller fomenta el trabajo en equipo, la resolución de problemas y la comunicacion. Los niños aprenden a planificar, describir sus construcciones y explicar procesos, desarrollando habilidades narrativas y vocabulario tecnico básico.",
             features: [
                 "Conceptos espaciales y tamanos",
                 "Resolucion de problemas",
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
             </svg>`,
-            description: "Este taller se centra especificamente en el desarrollo de las habilidades comunicativas de los ninos. A traves de juegos con tarjetas, imagenes, objetos reales y actividades interactivas, los pequenos amplian su vocabulario, mejoran su pronunciacion y aprenden a estructurar oraciones. Se trabaja la identificacion de objetos, descripcion de caracteristicas, narracion de experiencias personales y comprension de preguntas. Cada actividad esta disenada para que el nino se sienta motivado a comunicarse.",
+            description: "Este taller se centra especificamente en el desarrollo de las habilidades comunicativas de los niños. A traves de juegos con tarjetas, imagenes, objetos reales y actividades interactivas, los pequeños amplian su vocabulario, mejoran su pronunciación y aprenden a estructurar oraciones. Se trabaja la identificacion de objetos, descripción de caracteristicas, narración de experiencias personales y comprension de preguntas. Cada actividad esta disenada para que el niño se sienta motivado a comunicarse.",
             features: [
                 "Ampliacion de vocabulario",
                 "Mejora de pronunciacion",
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <circle cx="17.5" cy="15.5" r="2.5"></circle>
                 <path d="M8 17V5l12-2v12"></path>
             </svg>`,
-            description: "La musica es una herramienta poderosa para el desarrollo del lenguaje. En este taller, los ninos aprenden canciones infantiles, rimas, trabalenguas y juegos ritmicos que fortalecen su memoria auditiva, conciencia fonologica y fluidez verbal. Las canciones con movimientos ayudan a asociar palabras con acciones, mientras que los juegos de ritmo mejoran la percepcion de los sonidos del lenguaje. Es una forma divertida y efectiva de desarrollar habilidades prelinguisticas y linguisticas.",
+            description: "La música es una herramienta poderosa para el desarrollo del lenguaje. En este taller, los niños aprenden canciones infantiles, rimas, trabalenguas y juegos ritmicos que fortalecen su memoria auditiva, conciencia fonologica y fluidez verbal. Las canciones con movimientos ayudan a asociar palabras con acciones, mientras que los juegos de ritmo mejoran la percepcion de los sonidos del lenguaje. Es una forma divertida y efectiva de desarrollar habilidades prelinguisticas y linguisticas.",
             features: [
                 "Memoria auditiva",
                 "Conciencia fonologica",
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <line x1="9" y1="9" x2="9.01" y2="9"></line>
                 <line x1="15" y1="9" x2="15.01" y2="9"></line>
             </svg>`,
-            description: "El teatro de titeres es una actividad extraordinaria para el desarrollo del lenguaje expresivo. Los ninos pueden dar voz a personajes, crear dialogos, inventar historias y expresar emociones a traves de los titeres. Esta forma de juego simbolico les permite practicar diferentes tonos de voz, expresiones y estructuras linguisticas en un ambiente seguro y divertido. El taller incluye la creacion de titeres sencillos y la representacion de pequenas obras, fomentando la creatividad y la expresion oral.",
+            description: "El teatro de titeres es una actividad extraordinaria para el desarrollo del lenguaje expresivo. Los niños pueden dar voz a personajes, crear dialogos, inventar historias y expresar emociones a traves de los titeres. Esta forma de juego simbolico les permite practicar diferentes tonos de voz, expresiones y estructuras linguisticas en un ambiente seguro y divertido. El taller incluye la creacion de titeres sencillos y la representacion de pequenas obras, fomentando la creatividad y la expresion oral.",
             features: [
                 "Expresion de emociones",
                 "Creacion de dialogos",
